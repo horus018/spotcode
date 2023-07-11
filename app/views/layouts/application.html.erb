@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotcode</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'spotcode' %>
+  
+    <%
+=begin%>
+ desse jeito de cima funciona, mas é uma solucao temporaria, ver oq essa linha faz. Original: javascript_pack_tag 
+<%
+=end%>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
